@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Diana's Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <form class="search-form" id="search-form">
+                <div class="row">
+                    <div class="col-7">
+                        <input type="search" placeholder="Type a city...⌨️" autofocus="on" autocomplete="off"
+                            id="city-input" class="form-control" />
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" value="Search" class="form-control btn btn-primary" />
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-success shadow-sm w-100" id="current-location-button">
+                            📍
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <h1 id="city">
+                <i class="fas fa-map-marker-alt"></i>
+                Which city are you in?
+            </h1>
+            <h2 id="date">
+            </h2>
+            <h3 id="description">
+            </h3>
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <span class="temperature" id="temperature">19</span>
+                    <span class="units">°C</span>
+                </div>
+                <div class="col-4">
+                    <div class="weather-details">
+                        <ul>
+                            <li>
+                                Humidity: <span id="humidity"></span>%
+                            </li>
+                            <li>
+                                Wind: <span id="wind"></span>km/h
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast">
+                Forecast for the week
+            </div>
+            <div class="week-forecast">
+                <div class="row justify-content-center">
+                    <div class="col-1"> MON
+                        <br />
+                        <i class="fas fa-cloud"></i>
+                        <br />
+                        24°
+                    </div>
+                    <div class="col-1"> TUE
+                        <br />
+                        <i class="fas fa-sun sunny"></i>
+                        <br />
+                        30°
+                    </div>
+                    <div class="col-1"> WED
+                        <br />
+                        <i class="fas fa-cloud"></i>
+                        <br />
+                        25°
+                    </div>
+                    <div class="col-1"> THU
+                        <br />
+                        <i class="fas fa-cloud"></i>
+                        <br />
+                        24°
+                    </div>
+                    <div class="col-1"> FRI
+                        <br />
+                        <i class="fas fa-cloud"></i>
+                        <br />
+                        25°
+                    </div>
+                    <div class="col-1"> SAT
+                        <br />
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                        <br />
+                        22°
+                    </div>
+                    <div class="col-1"> SUN
+                        <br />
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                        <br />
+                        21°
+                    </div>
+                </div>
+                <hr>
+                <div class="update-time">
+                    Last updated: 28 Feb 2021, 1:00pm
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="credits">
+        <em>
+            Open-source code by Fatin Diana
+        </em>
+    </div>
+    <script src="src/index.js">
+
+
+        function displayUsername(response) {
+
+        }
+        let apiUrl = "https://jsonplaceholder.typicode.com/users/1";
+
+        axios.get(apiUrl).then(displayUsername);
+
+    </script>
+</body>
+
+</html>

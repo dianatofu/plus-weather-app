@@ -1,0 +1,101 @@
+body {
+  background: #f5fafc;
+  color: #fafafa;
+  font-family: arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 100;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+ul {
+  margin: 0 0 20px;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+.weather-app {
+  background: radial-gradient(
+    circle at 0.8% 1.8%,
+    rgb(255, 104, 107) 0%,
+    rgb(255, 187, 103) 90.1%
+  );
+  border: 2px solid #e8f1f5;
+  padding: 30px 40px;
+  margin: 20px auto;
+  border-radius: 20px;
+  max-width: 700px;
+}
+
+.weather-icon {
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0;
+}
+.temperature {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 100px;
+}
+
+.units {
+  font-size: 20px;
+  position: relative;
+  top: -60px;
+}
+
+.weather-details {
+  font-size: 20px;
+  margin: 0;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+/* location pin button */
+
+.fa-map-marker-alt {
+  color: rgb(255, 222, 77);
+}
+
+.forecast {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.week-forecast {
+  font-size: 20px;
+}
+.update-time {
+  text-align: center;
+}
+
+.credits {
+  color: grey;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
