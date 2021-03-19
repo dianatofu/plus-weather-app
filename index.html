@@ -28,14 +28,13 @@
                     </div>
                     <div class="col-2">
                         <button class="btn btn-success shadow-sm w-100" id="current-location-button">
-                            📍
+                        📍 Here
                         </button>
                     </div>
                 </div>
             </form>
             <h1 id="city">
                 <i class="fas fa-map-marker-alt"></i>
-                Which city are you in?
             </h1>
             <h2 id="date">
             </h2>
@@ -59,53 +58,15 @@
                     </div>
                 </div>
             </div>
-            <div class="forecast">
-                Forecast for the week
+            3-hour Forecast
             </div>
-            <div class="week-forecast">
-                <div class="row justify-content-center">
-                    <div class="col-1"> MON
-                        <br />
-                        <i class="fas fa-cloud"></i>
-                        <br />
-                        24°
-                    </div>
-                    <div class="col-1"> TUE
-                        <br />
-                        <i class="fas fa-sun sunny"></i>
-                        <br />
-                        30°
-                    </div>
-                    <div class="col-1"> WED
-                        <br />
-                        <i class="fas fa-cloud"></i>
-                        <br />
-                        25°
-                    </div>
-                    <div class="col-1"> THU
-                        <br />
-                        <i class="fas fa-cloud"></i>
-                        <br />
-                        24°
-                    </div>
-                    <div class="col-1"> FRI
-                        <br />
-                        <i class="fas fa-cloud"></i>
-                        <br />
-                        25°
-                    </div>
-                    <div class="col-1"> SAT
-                        <br />
-                        <i class="fas fa-cloud-showers-heavy"></i>
-                        <br />
-                        22°
-                    </div>
-                    <div class="col-1"> SUN
-                        <br />
-                        <i class="fas fa-cloud-showers-heavy"></i>
-                        <br />
-                        21°
-                    </div>
+            <div class="row weather-forecast" id="forecast">
+                    <div class="col-2">
+                    <h2>
+                    </h2>
+                    <img
+                        src="http://"
+                    />
                 </div>
                 <hr>
                 <div class="update-time">
@@ -116,20 +77,15 @@
     </div>
     <div class="credits">
         <em>
-            Open-source code by Fatin Diana
+            <a 
+            href="https://github.com/dianatofu/plus-weather-app.git"
+            target="_blank">Open-source code</a> by
+            <a
+            href="https://www.linkedin.com/in/fdianas/"
+            target="_blank"> Fatin Diana</a>
         </em>
     </div>
     <script src="src/index.js">
-
-
-        function displayUsername(response) {
-
-        }
-        let apiUrl = "https://jsonplaceholder.typicode.com/users/1";
-
-        axios.get(apiUrl).then(displayUsername);
-
     </script>
 </body>
-
 </html>
