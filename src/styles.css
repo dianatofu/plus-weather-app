@@ -46,13 +46,6 @@ li {
   max-width: 700px;
 }
 
-.weather-icon {
-  height: 250px;
-  width: 250px;
-  display: block;
-  margin: 0 auto;
-  padding-top: 0;
-}
 .temperature {
   font-size: 100px;
   font-weight: 400;
@@ -98,4 +91,13 @@ li {
   text-align: center;
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.current-weather-icon {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 0;
 }
